@@ -12,8 +12,8 @@
 Using `requirements.yml`:
 
 ```
-- src: https://github.com/dfarrell07/ansible-opendaylight
-  version: origin/maste
+- src: https://github.com/rsvancara/ssh
+  version: origin/master
 ```
 
 Using `git`:
