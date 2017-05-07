@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+  sudo: yes
+  roles:
+    - franklinkim.ssh
+  vars:
+    ssh_port:
+      - 22
+    ssh_permit_root_login: 'no'
+    ssh_pubkey_authentication: 'yes'
+    ssh_password_authentication: 'yes'
+    ssh_known_hosts:
+      - github.com
+      - name: github.com
+        key: "{{ lookup('pipe', 'ssh-keyscan -t rsa github.com') }}"
