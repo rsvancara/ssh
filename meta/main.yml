@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: franklin
+  author: svancara
   company: We Are Interactive
   description: Congifures ssh
   min_ansible_version: 1.9

@@ -1,10 +1,5 @@
 # Ansible Ssh Role
 
-[![Build Status](https://img.shields.io/travis/weareinteractive/ansible-ssh.svg)](https://travis-ci.org/weareinteractive/ansible-nodejs)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/weareinteractive/ansible-ssh/master/LICENSE)
-[![GitHub Tags](https://img.shields.io/github/tag/weareinteractive/ansible-ssh.svg)](https://github.com/weareinteractive/ansible-ssh)
-[![GitHub Stars](https://img.shields.io/github/stars/weareinteractive/ansible-ssh.svg)](https://github.com/weareinteractive/ansible-ssh)
-
 > `ssh` is an [ansible](http://www.ansible.com) role which:
 >
 > * installs openssh (client/server)
@@ -14,22 +9,17 @@
 
 ## Installation
 
-Using `ansible-galaxy`:
-
-```
-$ ansible-galaxy install franklinkim.ssh
-```
-
 Using `requirements.yml`:
 
 ```
-- src: franklinkim.ssh
+- src: https://github.com/dfarrell07/ansible-opendaylight
+  version: origin/maste
 ```
 
 Using `git`:
 
 ```
-$ git clone https://github.com/weareinteractive/ansible-ssh.git franklinkim.ssh
+$ git clone https://github.com/rsvancara/ssh.git ssh
 ```
 
 ## Variables
@@ -71,7 +61,7 @@ These are the handlers that are defined in `handlers/main.yml`.
 - host: all
   sudo: yes
   roles:
-    - franklinkim.ssh
+    - ssh
   vars:
     ssh_port:
       - 22
